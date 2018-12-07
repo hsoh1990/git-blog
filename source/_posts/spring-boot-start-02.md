@@ -1,5 +1,5 @@
 ---
-title: Spring boot를 이용한 REST API 개발(02)
+title: Spring boot를 이용한 RESTful API 개발(02)
 date: 2018-08-30 22:48:48
 categories:
 - Spring Boot 정리
@@ -7,7 +7,6 @@ tags:
 - java
 - spring boot
 - PostgreSQL
-- H2
 - JPA
 - JUnit
 - lombok
@@ -210,6 +209,6 @@ server:
   port: 9090
 ```
 
-이상으로 Gradle 사용 및 환경설정에 대해 알바봤습니다.
+이상으로 Gradle 사용 및 환경설정에 대해 알아봤습니다.
 
 감사합니다.
