@@ -10,7 +10,6 @@ tags:
 - JPA
 - JUnit
 - lombok
-- swagger
 ---
 
 [Spring Boot](http://spring.io/projects/spring-boot)를 이용한 RESTful API 개발 3번째 입니다. 이번에는 요구사항을 정의한 후 Account 도메인을 통해 CRUD 로직을 만들어 보겠습니다.
@@ -18,9 +17,9 @@ tags:
 
  
 
-### Gradle Setting
+### Gradle 설정
 
-먼저  dependenccy를 설정하기 위해 build.gradel을 확인하겠습니다. [Spring boot를 이용한 REST API 개발(02)](https://hsoh1990.github.io/2018/08/30/spring-boot-start-02/)에서 설정을 했다면 다음과 같습니다.
+먼저  dependenccy를 설정하기 위해 build.gradle을 확인하겠습니다. [Spring boot를 이용한 REST API 개발(02)](https://hsoh1990.github.io/2018/08/30/spring-boot-start-02/)에서 설정을 했다면 다음과 같습니다.
 
 ```groovy
 buildscript {
@@ -122,7 +121,7 @@ public class AccountControllerTest {
 
 ### 계정 등록
 
-#### 등록성공
+#### 등록 성공
 
 먼저 명세에 정의된 내용을 Test 코드로 옮겨 보겠습니다. 테스트는 given, when, then 순서로 특정 상황(given)에서 특정 API로 요청했습때(when) 원하는 결과가 리턴(then)되는지 확인하는 방식으로 진행합니다.
 

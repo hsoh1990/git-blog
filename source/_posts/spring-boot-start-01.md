@@ -10,7 +10,6 @@ tags:
 - JPA
 - JUnit
 - lombok
-- swagger
 ---
 
 [Spring Boot](http://spring.io/projects/spring-boot)를 이용한 REST API 서버를 만들기를 정리하려고 합니다. 처음 Spring을 접하고 SpringBoot를 처음 사용했을 때 간단히 따라할 강의나 자료가 부족했고 러닝커브도 심해서 당장 먼가 팍팍 진행된다는 느낌을 못받아서 힘들었던거 같습니다.

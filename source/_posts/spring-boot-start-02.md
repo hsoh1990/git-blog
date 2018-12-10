@@ -10,7 +10,6 @@ tags:
 - JPA
 - JUnit
 - lombok
-- swagger
 ---
 
 [Spring Boot](http://spring.io/projects/spring-boot)를 이용한 REST API 서버를 만들기위해 의존성을 추가하고 그게 맞는 환경설정을 방법을 알아보겠습니다. [Spring Boot Reference Guide](https://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/reference/htmlsingle/#getting-started)를 참고하여 Spring Boot에서 제공하는 starter들과 Gradle을 사용하는 법을 정리하겠습니다.
