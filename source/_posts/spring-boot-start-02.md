@@ -1,6 +1,6 @@
 ---
-title: Spring boot를 이용한 RESTful API 개발(02)
-date: 2018-08-30 22:48:48
+title: Spring Boot 정리(02)
+date: 2018-09-28 22:48:48
 categories:
 - Spring Boot 정리
 tags:
