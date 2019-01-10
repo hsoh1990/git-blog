@@ -53,6 +53,14 @@ public class AppRunner implements ApplicationRunner{
 ##### 프로퍼티
 
 - 다양한 방법으로 정의할 수 있는 설정값
+- -Dapp.name=spring5
+- properties파일 사용
+
+```properties
+app.about=spring
+```
+
+- java 사용방법
 
 ```java
 @Component
@@ -73,13 +81,47 @@ public class AppRunner implements ApplicationRunner{
 }
 ```
 
-- -Dapp.name=spring5
-
-
+- 우선순위
+  - ServletConfig 매개변수
+  - ServletContext 매개변수
+  - JNDI (java:comp/env/)
+  - JVM 시스템 프로퍼티 (-Dkey="value")
+  - JVM 시스템 환경 변수(운영 체제 환경 변수)
 
 ### MessageSource
 
+i18n 기능을 제고하는 인터페이스로 스프링 부트를 사용하면 별다른 설정 없이 messages.properties 사용가능
+
+- ApplicatioContext의 getMessageSource()를 통해 호출
+- messages.properties, messages_ko_kr.properties...
+
+```properties
+# messages.properties
+greeting=Hello, {0}
+#messages.properties
+greeting=안녕, {0}
+```
+
+```java
+@Component
+public class AppRunner implements ApplicationRunner{
+
+    @Autowired
+    MessageSource messageSource;
+
+    @Override
+    public void run(ApplicationArguments args) throws Exception {
+        System.out.println(messageSource.getMessage("greeting", new String[]{"hsoh"}, Locale.KOREA));
+        System.out.println(messageSource.getMessage("greeting", new String[]{"hsoh"}, Locale.getDefault()));
+    }
+}
+```
+
+
+
 ### ApplicationEventPublisher
+
+
 
 ### ResourceLoader
 
