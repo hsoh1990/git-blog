@@ -52,6 +52,29 @@ public class AppRunner implements ApplicationRunner{
 
 ##### 프로퍼티
 
+- 다양한 방법으로 정의할 수 있는 설정값
+
+```java
+@Component
+public class AppRunner implements ApplicationRunner{
+    @Autowired
+    ApplicationContext ctx;
+
+    @Value("${app.about}")
+    String appAbout;
+
+    @Override
+    public void run(ApplicationArguments args) throws Exception {
+        Environment environment = ctx.getEnvironment();
+        System.out.println(environment.getProperty("app.name"));
+        System.out.println(this.appAbout);
+
+    }
+}
+```
+
+- -Dapp.name=spring5
+
 
 
 ### MessageSource
