@@ -121,7 +121,91 @@ public class AppRunner implements ApplicationRunner{
 
 ### ApplicationEventPublisher
 
+이벤트 프로그래밍에 필요한 인터페이스를 제공(옵저버 패턴의 구현체)
 
+- ApplicationEventPublisher의 메소드 publishEvent(ApplicationEvent event)로 이벤트 발생
+- 4.2 이전에는  ApplicationEvent를 상속받아서 이벤트 구현
+- 이벤트를 발생시키고 EventListener를 등록하여 이벤트 처리
+
+```java
+public class AppEvent {
+
+    private int data;
+
+    private Object source;
+
+    public AppEvent(Object source, int data) {
+        this.data = data;
+        this.source = source;
+    }
+
+    public Object getSource() {
+        return source;
+    }
+
+    public int getData() {
+        return data;
+    }
+}
+
+```
+
+```java
+@Component
+public class AppRunner implements ApplicationRunner{
+
+    @Autowired
+    ApplicationEventPublisher publisher;
+
+    @Override
+    public void run(ApplicationArguments args) throws Exception {
+        publisher.publishEvent(new AppEvent(this, 100));
+    }
+}
+```
+
+```java
+@Component
+public class AppEventHandler {
+
+    @EventListener
+    @Async
+    public void handle(AppEvent event){
+        System.out.println(Thread.currentThread().toString());
+        System.out.println("AppEventHandler = " +event.getData());
+    }
+}
+
+```
+
+- 순서지정은 @Order로 지정
+- 비동기적 실행은 @Async 사용
 
 ### ResourceLoader
+
+리소스를 읽어오는 기능을 제공하는 인터페이스
+
+- ResourceLoader의 getResource(java.lang.String location)로 리소스 조회
+- 다양한 방법으로 조회가능
+  - 파일 시스템에서 읽기
+  - 클래스 패스에서 읽기
+  - URL로 읽기
+  - 상대/절대 경로로 읽기
+
+```java
+@Component
+public class AppRunner implements ApplicationRunner{
+
+    @Autowired
+    ResourceLoader resourceLoader;
+
+    @Override
+    public void run(ApplicationArguments args) throws Exception {
+        Resource resource = resourceLoader.getResource("classpath:text.txt");
+        System.out.println(resource.exists());
+        System.out.println(resource.getDescription());
+        Files.lines(Paths.get(resource.getURI())).forEach(System.out::println);
+    }
+}
+```
 
