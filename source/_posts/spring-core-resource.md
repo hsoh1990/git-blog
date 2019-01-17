@@ -6,11 +6,10 @@ categories:
 tags:
 - java
 - spring boot
-- IoC
-- Bean
+- Resource
 ---
 
-java.net.URL을 org.springframework.core.io.Resource로 감싸 추상화 한 것으로 클래스패스 기준으로 리소스 읽어오는 기능 부재, ServletContext를 기준으로 상대 경로로 읽어오는 기능 부재     , 새로운 핸들러를 등록하여 특별한 URL 접미사를 만들어 사용할 수는 있지만 구현이 복잡하고 편의성 메소드가 부족하여 추상화 하였다.
+java.net.URL을 org.springframework.core.io.Resource로 감싸 추상화 한 것으로 클래스패스 기준으로 리소스 읽어오는 기능 부재, ServletContext를 기준으로 상대 경로로 읽어오는 기능 부재     , 새로운 핸들러를 등록하여 특별한 URL 접미사를 만들어 사용할 수는 있지만 구현이 복잡하고 편의성 메소드가 부족하여 추상화하였다.
 
 <!--more-->  
 
@@ -35,11 +34,11 @@ java.net.URL을 org.springframework.core.io.Resource로 감싸 추상화 한 것
 
 #### 리소스 읽어오기 
 
-- Resource의 타입은 locaion 문자열과 ApplicationContext의 타입에 따라 결정 된다.
+- Resource의 타입은 locaion 문자열과 ApplicationContext의 타입에 따라 결정
   - ClassPathXmlApplicationContext -> ClassPathResource
   - FileSystemXmlApplicationContext -> FileSystemResource
   - WebApplicationContext -> ServletContextResource 
-- ApplicationContext의 타입에 상관없이 리소스 타입을 강제하려면 java.net.URL 접두어(+ classpath:)중 하나를 사용할 수 있다. 
+- ApplicationContext의 타입에 상관없이 리소스 타입을 강제하려면 java.net.URL 접두어(+ classpath:)중 하나를 사용 가능
   - classpath:me/whiteship/config.xml -> ClassPathResource 
   - file:///some/resource/path/config.xml -> FileSystemResource 
 
