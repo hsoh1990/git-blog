@@ -1,5 +1,5 @@
 ---
-title: spring-core-validation
+title: Spring 핵심 기술 (validation 추상화)
 date: 2019-01-20 20:34:52
 categories:
 - Spring 핵심 기술
