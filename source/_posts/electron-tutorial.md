@@ -33,6 +33,9 @@ Mac, Windows 와 Linux 용으로 패키지화 하여 사용가능하게 한다.
 Electron이 실행될 때 Node.js가 실행되는 부분을 main process라고 한다. main process는 새창을 
 생성하거나 윈도우, 맥, 리녹스의 네이티브 GUI를 조작할 수 있으며, Node.js에서 사용하는 모듈을 사용할 수 있다.   
 </br>
+
+### renderer process
+
 사용자에게 보여지는 GUI를 구성할 때 작동하는 웹페이지를 renderer process라고 한다. renderer process는 
 네이티브 리소스에 접근할 수 없으며, 크로미움을 사용하여 사용자에게 보여주는 화면을 구성한다.      
 </br>
