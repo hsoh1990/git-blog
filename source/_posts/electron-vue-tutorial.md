@@ -9,7 +9,7 @@ tags:
 - Vue.js
 ---
 
-ELectron을 사용한 애플리케이션을 만들기 위한 Renderer, 사용자에게 보여지는 GUI를 구현하기 위해 Vue.js  를 이용하여 구현할 수 있다. Electron에 대한 설명은 [Electron 애플리케이션 만들기](https://hsoh1990.github.io/2019/01/18/electron-tutorial/)를 참고하고 [Vue.js](https://kr.vuejs.org/v2/guide/index.html)를 참고 하면 된다.
+ELectron을 사용한 애플리케이션을 만들경우 사용자에게 보여지는 GUI(Renderer)를 Vue.js  를 이용하여 구현할 수 있다. Electron에 대한 설명은 [Electron 애플리케이션 만들기](https://hsoh1990.github.io/2019/01/18/electron-tutorial/)를 참고하고 [Vue.js](https://kr.vuejs.org/v2/guide/index.html)를 참고 하면 된다.
 
 <!--more-->  
 
