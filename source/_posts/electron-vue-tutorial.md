@@ -88,12 +88,12 @@ my-project
   - `main` 프로세스 코드로 electron을 구동에 필요한 코드 정의
   - `renderer` 프로세스 코드로 vue.js 기반의 코드를 작성(cli로 설치시 기본 모듈을 정의되어 있음)
 - static
-  -  `main`과 `renderer` 프로세스 둘 다가 소비 할 수 있는 Static assets을 배치
-  - `renderer` 에서는 static/imgs/some.png` 디렉토리로 검색
-  -  `main` path.join(__static, '/somePath..')로 디렉토리 검색
+  -  `main`, `renderer` 각 프로세스가 소비 할 수 있는 Static assets을 배치
+  - `renderer` 에서는 `static/imgs/some.png` 디렉토리로 검색
+  -  `main`에서는  `path.join(__static, '/somePath..')`로 디렉토리 검색
 - test
-  - electron-vue는 유닛 테스트를 위해 [Karma](https://karma-runner.github.io/1.0/index.html) 테스트 러너, (Chai[Chai](http://chaijs.com/)와 함께)[Mocha](https://mochajs.org/) 테스트 프레임워크를 사용
-  - electron-vue는 엔드 투 엔드 테스트를 위해 [Spectron](http://electron.atom.io/spectron/) 과 [Mocha](https://mochajs.org/) ( [Chai](http://chaijs.com/) 와 함께 ) 테스트 프레임 워크를 사용
+  - electron-vue는 유닛 테스트를 위해 [Karma](https://karma-runner.github.io/1.0/index.html) 테스트 러너, [Mocha](https://mochajs.org/) 테스트 프레임워크를 사용
+  - electron-vue는 엔드 투 엔드 테스트를 위해 [Spectron](http://electron.atom.io/spectron/) 과 [Mocha](https://mochajs.org/) 테스트 프레임 워크를 사용
 
 ## NPM Scripts
 
