@@ -1,6 +1,6 @@
 ---
 title: Electron + Vue.js 애플리케이션 만들기
-date: 2019-01-22 19:46:04
+date: 2019-01-19 19:46:04
 categories:
 - electron 튜토리얼
 tags:
@@ -107,8 +107,7 @@ my-project
 - `npm run unit`  -> Karma와 Jasmine로 단위 테스트를 실행 ([**Unit Testing**](https://simulatedgreg.gitbooks.io/electron-vue/content/ko/unittesting.html))
 - `npm run e2e` -> Spectron + Mocha로 end-to-end 테스트를 실행([**End-to-end Testing**](https://simulatedgreg.gitbooks.io/electron-vue/content/ko/end-to-end_testing.html))
 - `npm test` -> `npm run unit` & `npm run e2e` 둘 다 실행([Testing**](https://simulatedgreg.gitbooks.io/electron-vue/content/ko/testing.html))
-
-
+- 
 
 ## Reference
 
@@ -119,4 +118,4 @@ my-project
 
 ## Contributors
 
-- 오형석[(ohs4123@gmail.com)](
+- 오형석[(ohs4123@gmail.com)](ohs4123@gmail.com)

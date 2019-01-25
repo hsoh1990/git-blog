@@ -17,7 +17,7 @@ tags:
 
  
 
-### Gradle 설정
+## Gradle 설정
 
 먼저  dependenccy를 설정하기 위해 build.gradle을 확인하겠습니다. [Spring boot를 이용한 REST API 개발(02)](https://hsoh1990.github.io/2018/08/30/spring-boot-start-02/)에서 설정을 했다면 다음과 같습니다.
 
@@ -63,7 +63,7 @@ dependencies {
 
 
 
-### TEST 코드 작성
+## TEST 코드 작성
 
 spring boot에서 테스트는 `src/test/java/packagename/..`에 `@SpringBootTest`를 사용해 작성합니다.` AccountControllerTest` Class를 사용하여 기본 틀을 작성하면 다음과 같습니다.
 
@@ -96,7 +96,7 @@ public class AccountControllerTest {
 
 현재 만들지 않은 Class도 있지만 그대로 진행합니다. 필요한 Class는 진행하면서 구현하도록 하며, 코드에 대한 설명을 추후에 하나씩 살펴보도록 하고 일딴 개발을 진행해 보겠습니다.  
 
-### Account 도메인 CRUD 명세 정의 
+## Account 도메인 CRUD 명세 정의 
 
 다음 개발에 앞서 Test코드를 작성하기 위한 명세를 정의하겠습니다.
 
@@ -119,9 +119,9 @@ public class AccountControllerTest {
 
 
 
-### 계정 등록
+## 계정 등록
 
-#### 등록 성공
+### 등록 성공
 
 먼저 명세에 정의된 내용을 Test 코드로 옮겨 보겠습니다. 테스트는 given, when, then 순서로 특정 상황(given)에서 특정 API로 요청했습때(when) 원하는 결과가 리턴(then)되는지 확인하는 방식으로 진행합니다.
 
@@ -304,7 +304,7 @@ public class ForBlogApplication {
 
 
 
-#### 등록 실패
+### 등록 실패
 
 테스트는 등록에 실패하느 경우도 생각해야합니다. 등록에 실패하는 경우에는 어떤 처리를 해야하는지 어떤 동작을 해야하는지 명세에 정의되어 있고 그대로 동작하는지 확인하기 위해 다음과 같은 Test 코드를 작성 했습니다.
 
@@ -407,7 +407,7 @@ public class AccountDto {
 
 
 
-### 에러처리 
+## 에러처리 
 
 추가적으로 spring으로 개발하다보면 위와 같이 에러처리를 해야합니다. 이걸 각 함수마다 따로 정의를 하다보면 중복되는 에러처리가 발생합니다. `@ExceptionHandler`를 통해 이런 중복된 코드 줄이겠습니다. 
 
@@ -435,7 +435,7 @@ public class AccountController {
 
 
 
-### 마치며
+## 마치며
 
 이상으로  글재주가 없다는걸 다시한번 느끼면서 account CRUD에 대한 정리를 마치겠습니다. 다음에는 JPA를 사용하여 DB(Postgresql)와 연동해 보겠습니다.
 

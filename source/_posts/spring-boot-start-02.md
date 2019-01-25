@@ -17,7 +17,7 @@ tags:
 
 
 
-### Spring Boot  Gradle 사용법
+## Spring Boot  Gradle 사용법
 
 Spring Boot에서 Gradle 사용법은 [13.3](https://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/reference/htmlsingle/#using-boot-gradle)에 정의 되어 있습니다. 
 
@@ -65,7 +65,7 @@ dependencies {
 
 
 
-### Spring Boot application starters
+## Spring Boot application starters
 
 Spring Boot에는 다양한 [starter](https://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/reference/htmlsingle/#using-boot-starter)들이 존재 합니다. 예를 들어 Spring Boot의 코어 기능을 가지는 `spring-boot-starter`가 있습니다. 또한 JPA를 사용하기 위한 `spring-boot-starter-data-jpa`또는 Spring Security 의존성을 가지는 `spring-boot-starter-security` 등등 다양한 starter들을 확인할 수 있습니다.
 
@@ -84,7 +84,7 @@ Spring Boot에는 다양한 [starter](https://docs.spring.io/spring-boot/docs/1.
 
 모든 공식 starter는 spring-boot-starter- *, *라는 비슷한 명명 패턴을 따릅니다. 이 명명 규칙은 starter를 찾아야 할 때 도움을 주기위한 것입니다. 많은 IDE의 Maven 통합을 통해 의존성을 이름으로 검색 할 수 있습니다. 개인적인 프로젝트에서는 spring-boot-starter- *, *로 시작해서는 안됩니다. 
 
-### Gradle Practice
+## Gradle Practice
 
 [Spring boot를 이용한 REST API 개발(01)](https://hsoh1990.github.io/2018/08/30/spring-boot-start-01/)에서 프로젝트를 생성했습니다. Intellij에서는 프로젝트를 생성하면 다음과 같이 기본적인 구조가 생성되며 API테스트를 위해 `compile('org.springframework.boot:spring-boot-starter-web')`를 추가 했습니다.
 

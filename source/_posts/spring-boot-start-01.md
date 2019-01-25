@@ -62,7 +62,7 @@ Intellij에서는 `New Project`  -> `pring Initializr` 를 선택하면 Spring B
 
 
 
-### Hello World! 
+## Hello World! 
 
 간단히 동작을 확인하기 위해 `ForBlogController.java` 파일을 생성합니다. 생성은 com.ex.forblog에서 오른쪽 버튼 클릭 후 `new` -> `Java Class`  또는 `command + n` 을 통해 생성합니다. 생성된 파일에  다음과 같이 같단한 API를 만들어 보죠.
 
@@ -98,7 +98,7 @@ dependencies {
 
 
 
-### git, github연동 
+## git, github연동 
 
 git은 현재 버전관리 시스템으로 많이 활용되고 있으며, 많은 기업들이 github, gitlab등를 통해 협업하고 있다. git에 대한 자세한 내용은 인터넷이 더 자세히 나와있기 때문에 생략합니다.
 

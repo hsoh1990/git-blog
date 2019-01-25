@@ -15,7 +15,7 @@ tags:
 [Spring Boot](http://spring.io/projects/spring-boot)를 이용한 RESTful API 개발 4번째 입니다. 간략하게 JPA 사용법과 도메인 정의에 대해서 알아보며,  [Spring boot를 이용한 REST API 개발(03)](https://hsoh1990.github.io/2018/08/30/spring-boot-start-03/)에서 사용한 구현한 Repository를 변경하겠습니다.
 <!--more-->  
 
-### Gradle 설정
+## Gradle 설정
 
 먼저  dependenccy를 설정하기 위해 build.gradle을 수정하겠습니다. [Spring boot를 이용한 REST API 개발(03)](https://hsoh1990.github.io/2018/08/30/spring-boot-start-03/)에서 설정까지 따라 하셨다면 build.gradle파일에서 `dependencies` 에 db에 관련된 dependency만 추가 하시면 됩니다.
 
@@ -31,7 +31,7 @@ dependencies {
 
 
 
-### application.yml 설정
+## application.yml 설정
 
 PostgreSQL을 사용하며, 다운로드 및 설치는 [여기](https://www.postgresql.org/download/)에서 각 OS에 맞는 버전으로 다운받으신 후 설치하시면 됩니다. 
 
@@ -68,7 +68,7 @@ Hibernate: alter table account add constraint UK_bb9lrmwswqvhcy1y430ki00ir uniqu
 
 
 
-### Account 도메인 수정
+## Account 도메인 수정
 
 이제 설정을 완료했으니 도메인을 정의해보죠.
 
@@ -110,7 +110,7 @@ class Account {
 
 
 
-### AccountRepository 수정
+## AccountRepository 수정
 
 다음은 JpaRepository를 extends하여  Repository를 수정합니다.
 
@@ -127,7 +127,7 @@ public interface AccountRepository extends JpaRepository<Account, Integer> {
 
 
 
-### TEST
+## TEST
 
 수정을 했으니 테스트를 확인해보죠. 처음 구현할 때 자신있게 될꺼라고 생각했지만 실제로 테스트를 해보면 먼가 문제가 있는듯 보입니다.
 
@@ -150,6 +150,6 @@ public class AccountControllerTest {
 
 다시 테스트를 해보면 성공적으로 마쳤을꺼라고 예상됩니다.
 
-### 마치며
+## 마치며
 
 원래는 자동 문서화도구인 Swagger도 연동해보려고 했지만 springdoc를 사용하는게 기존 controller코드를 로직에만 집중할 수 있을꺼 같아서 학습을 하려고 합니다. 정리가 되면 spring doc 사용법과 OAuth2.0 사용법을 정리하겠습니다. 

@@ -11,13 +11,11 @@ tags:
 
 ---
 
-### Environment
-
-프로파일과 프로퍼티를 다루는 인터페이스로 테스트 환경, 프로덕션 환경등 각각에 환경에 따라 다른 빈들을 써야하는 경우 혹은 특정한 빈을 써야하는 경우 사용
+Environment는 프로파일과 프로퍼티를 다루는 인터페이스로 테스트 환경, 프로덕션 환경등 각각에 환경에 따라 다른 빈들을 써야하는 경우 혹은 특정한 빈을 써야하는 경우 사용
 
 <!--more-->  
 
-##### 프로파일
+## 프로파일
 
 - 프로파일은 빈들의 그룹
 - ApplicatioContext의 getEnvironment()를 통해 호출
@@ -50,7 +48,7 @@ public class AppRunner implements ApplicationRunner{
 
 - -Dspring.profiles.active="test,A,B..."으로 설정가능
 
-##### 프로퍼티
+## 프로퍼티
 
 - 다양한 방법으로 정의할 수 있는 설정값
 - -Dapp.name=spring5
@@ -88,7 +86,7 @@ public class AppRunner implements ApplicationRunner{
   - JVM 시스템 프로퍼티 (-Dkey="value")
   - JVM 시스템 환경 변수(운영 체제 환경 변수)
 
-### MessageSource
+## MessageSource
 
 i18n 기능을 제고하는 인터페이스로 스프링 부트를 사용하면 별다른 설정 없이 messages.properties 사용가능
 
@@ -119,7 +117,7 @@ public class AppRunner implements ApplicationRunner{
 
 
 
-### ApplicationEventPublisher
+## ApplicationEventPublisher
 
 이벤트 프로그래밍에 필요한 인터페이스를 제공(옵저버 패턴의 구현체)
 
@@ -181,7 +179,7 @@ public class AppEventHandler {
 - 순서지정은 @Order로 지정
 - 비동기적 실행은 @Async 사용
 
-### ResourceLoader
+## ResourceLoader
 
 리소스를 읽어오는 기능을 제공하는 인터페이스
 
@@ -209,3 +207,6 @@ public class AppRunner implements ApplicationRunner{
 }
 ```
 
+## Contributors
+
+- 오형석[(ohs4123@gmail.com)](ohs4123@gmail.com)

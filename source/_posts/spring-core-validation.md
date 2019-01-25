@@ -6,14 +6,14 @@ categories:
 tags:
 - java
 - spring boot
-- Resource
+- validation
 ---
 
 애플리케이션에서 사용하는 객체 검증용 인터페이스로 org.springframework.validation.Validator 로 추상화하였다. 웹이, 서비스, 데이터 어떤 계층과도 관계없이 사용할 수 있다. 구현체 중 하나로, JSR-303(Bean Validation 1.0)과 JSR-349(Bean Validation 1.1)을 지원(LocalValidatorFactoryBean)하며,  DataBinder에 들어가 바인딩 할 때 같이 사용 가능하다.
 
 <!--more-->  
 
-#### 인터페이스 
+## 인터페이스 
 
 -  boolean supports(Class clazz): 어떤 타입의 객체를 검증할 때 사용할 것인지 결정
 -  void validate(Object obj, Errors e): 실제 검증 로직을 이 안에서 구현 
@@ -59,7 +59,7 @@ public class AppRunner implements ApplicationRunner{
 
 
 
-#### 스프링 부트 2.0.5 이상 버전을 사용할 때 
+## 스프링 부트 2.0.5 이상 버전을 사용할 때 
 
 - LocalValidatorFactoryBean 빈으로 자동 등록 
 

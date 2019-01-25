@@ -14,7 +14,7 @@ Mac, Windows 와 Linux 용으로 패키지화 하여 사용가능하게 한다.
 
 <!--more-->  
 
-**Table of Contents**
+## **Table of Contents**
 
 - [Quick start](#Quick-start)
 - [Inter process communication](#Inter-process-communication)
