@@ -153,3 +153,7 @@ public class AccountControllerTest {
 ## 마치며
 
 원래는 자동 문서화도구인 Swagger도 연동해보려고 했지만 springdoc를 사용하는게 기존 controller코드를 로직에만 집중할 수 있을꺼 같아서 학습을 하려고 합니다. 정리가 되면 spring doc 사용법과 OAuth2.0 사용법을 정리하겠습니다. 
+
+## Contributors
+
+- 오형석[(ohs4123@gmail.com)](ohs4123@gmail.com)

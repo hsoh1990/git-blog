@@ -440,3 +440,7 @@ public class AccountController {
 이상으로  글재주가 없다는걸 다시한번 느끼면서 account CRUD에 대한 정리를 마치겠습니다. 다음에는 JPA를 사용하여 DB(Postgresql)와 연동해 보겠습니다.
 
 감사합니다.
+
+## Contributors
+
+- 오형석[(ohs4123@gmail.com)](ohs4123@gmail.com)

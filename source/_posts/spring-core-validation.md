@@ -96,3 +96,7 @@ public class AppRunner implements ApplicationRunner{
 
 - JSR-380(Bean Validation 2.0.1) 구현체로 hibernate-validator 사용. 
 - https://beanvalidation.org/ 
+
+## Contributors
+
+- 오형석[(ohs4123@gmail.com)](ohs4123@gmail.com)

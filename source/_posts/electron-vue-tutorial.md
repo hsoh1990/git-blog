@@ -16,7 +16,7 @@ ELectron을 사용한 애플리케이션을 만들경우 사용자에게 보여�
 **Table of Contents**
 
 - [Quick start](#Quick-start)
-- [Project Structure](Project-Structure)
+- [Project Structure](#Project-Structure)
 - [NPM Scripts](#NPM-Scripts)
 - [Reference](#Reference)
 - [Contributors](#Contributors)

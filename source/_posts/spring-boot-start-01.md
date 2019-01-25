@@ -132,3 +132,7 @@ $ git remote add origin git@github.com:hsoh1990/spring-for-blog.git
 이것으로 spring boot 프로젝트 생성 및 기본 설정에 대해서 알아봤고 다음에는 사용할 모듈을 추가하고 그에 맞는 설정들을 진행하겠습다. 
 
 감사합니다.
+
+## Contributors
+
+- 오형석[(ohs4123@gmail.com)](ohs4123@gmail.com)

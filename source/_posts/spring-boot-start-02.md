@@ -211,3 +211,7 @@ server:
 이상으로 Gradle 사용 및 환경설정에 대해 알아봤습니다.
 
 감사합니다.
+
+## Contributors
+
+- 오형석[(ohs4123@gmail.com)](ohs4123@gmail.com)
