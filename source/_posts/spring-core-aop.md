@@ -239,4 +239,4 @@ Delete an event
 
 ## Contributors
 
-- 오형석[(ohs4123@gmail.com)](
+- 오형석[(ohs4123@gmail.com)](ohs4123@gmail.com)
