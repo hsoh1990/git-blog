@@ -2,7 +2,7 @@
 title: Electron 애플리케이션 만들기
 date: 2019-01-18 23:40:00
 categories:
-- electron 튜토리얼
+- electron
 tags:
 - node.js
 - electron
