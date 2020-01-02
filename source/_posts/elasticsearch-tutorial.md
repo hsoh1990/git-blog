@@ -5,8 +5,6 @@ categories:
 - elasticsearch
 tags:
 - elasticsearch
-- logstash
-- kibana
 ---
 
 elasticsearch란 아파치 Lucene 기반으로 개발한 오픈소스 검색엔진으로 많은 양의 데이터를 보관하고 실시간으로 분석할 수 있게 해준다. JSON 기반의 비정형 데이터 분산 검색과 분석을 지원하며, 다양한 기능을 플러그인 형태로 구현하여 적용할 수 있는 특징을 가진다. 본 문서에서는 설치 및 사용법(spring boot 연동)을 다룬다.
@@ -17,7 +15,6 @@ elasticsearch란 아파치 Lucene 기반으로 개발한 오픈소스 검색엔�
 - [elasticsearch 란](#elasticsearch-란)
 - [Installation](#Installation)
 - [기본 사용법](#기본-사용법)
-- [Spring boot 연동](#Spring-boot-연동)
 - [Reference](#Reference)
 - [Contributors](#Contributors)
 
@@ -371,14 +368,6 @@ $ curl -XGET http://localhost:9200/_search\?pretty -H 'content-type:application/
 ```
 
 bucket aggregation의 옵션들을 자세히 살펴보려면 [문서](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket.html)를 확인.
-
-
-
-
-
-## Spring boot 연동
-
-블라블라
 
 
 
